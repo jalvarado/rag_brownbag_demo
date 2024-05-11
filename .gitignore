@@ -2,5 +2,4 @@
 __pycache__
 
 # Ignore the chroma database persistence folder
-data/
 chroma/
