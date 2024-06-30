@@ -3,3 +3,6 @@ __pycache__
 
 # Ignore the chroma database persistence folder
 chroma/
+
+.DS_Store
+.ipynb_checkpoints
