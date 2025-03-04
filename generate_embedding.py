@@ -7,4 +7,4 @@ response = ollama.embeddings(
 )
 print(f"Embedding vector dimensions: {len(response['embedding'])}")
 print("--------")
-# print(response["embedding"])
+print(response["embedding"])

@@ -37,3 +37,33 @@ a chunk ID based on the document name, page number, and chunk index for the
 document
 
 ### Generating Embeddings
+
+To show what an embedding looks like, run the following command:
+
+```sh
+python generate_embedding.py
+```
+
+## Streamlit App
+An example chatbot has been created as a streamlit webapp.
+
+```sh
+source .venv/bin/activate
+streamlit run demo_st.py
+```
+
+- Toggle RAG support with the "Use RAG" toggle.
+- Select an Ollama model to use for the chatbot using the "Model Name" dropdown.  The model must be installed locally in Ollama.
+- Clear the chat history using the "Reset Conversation" button
+- Delete the ChromaDB collection used for the RAG example using the "Clear RAG Data" button.
+- Load the data from the `data/` folder into ChromaDB using the "Load Data" button.
+
+
+### Show a query without Rag
+1. Ensure the "Use RAG" toggle is off.
+2. Query the chatbot: "What are the steps of the software delivery checklist?"
+
+### Show a query with RAG
+1. Ensure that "Use RAG" is toggled on.
+2. Load the data into ChromaDB using "Load Data" button.
+3. Query the chatbot: "What are the steps of the software delivery checklist?"
